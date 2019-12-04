@@ -1,5 +1,6 @@
 import styled from 'styled-components/native';
 import { RectButton } from 'react-native-gesture-handler';
+import * as theme from '../../styles/theme';
 
 export const Container = styled.View`
   flex: 1;
@@ -27,7 +28,7 @@ export const Input = styled.TextInput.attrs({
 export const SubmitButton = styled(RectButton)`
   justify-content: center;
   align-items: center;
-  background: #7159c1;
+  background: ${theme.primaryBG};
   border-radius: 4px;
   margin-left: 10px;
   padding: 0 12px;
@@ -53,8 +54,8 @@ export const Avatar = styled.Image`
 `;
 
 export const Name = styled.Text`
-  font-size: 14px;
-  color: #eee;
+  font-size: 16px;
+  color: #999;
   font-weight: bold;
   margin-top: 4px;
   text-align: center;
@@ -74,7 +75,7 @@ export const ProfileButton = styled(RectButton)`
   flex: 1;
   margin-top: 10px;
 
-  background: #7159c1;
+  background: ${theme.primaryBG};
   justify-content: center;
   align-items: center;
   height: 36px;
@@ -98,8 +99,8 @@ export const ProfileButtonRemove = styled(RectButton)`
   margin-top: 10px;
   align-self: stretch;
 
-  background: #7159f9;
-  color: #000;
+  background: ${theme.SecondaryBG};
+
   justify-content: center;
   align-items: center;
   height: 36px;
